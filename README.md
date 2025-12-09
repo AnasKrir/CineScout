@@ -63,7 +63,7 @@ Les données proviennent de l’API publique **TMDB** (The Movie Database) et so
 📖 **Détails d’un film**
 
 - Poster HD, note moyenne, date de sortie  
-- Synopsis, genres, informations clés  
+- Synopsis et informations clés  
 - casting et lien vers bande-annonce si disponible  
 - Bouton **Ajouter à la Watchlist** / **Retirer de la Watchlist**
 
@@ -96,9 +96,9 @@ Les données proviennent de l’API publique **TMDB** (The Movie Database) et so
 |------------------------------------|--------------------------------------------------------------|
 | **Flutter 3.x**                    | Framework UI multiplateforme (Android / iOS)                |
 | **Dart 3.x**                       | Langage de programmation                                    |
-| **flutter_bloc** + **equatable**  | Gestion d’état réactive (BLoC)                              |
+| **flutter_bloc**                    | Gestion d’état réactive (BLoC)                              |
 | **go_router**                      | Navigation déclarative & garde d’authentification           |
-| **dio**                            | Client HTTP pour l’API TMDb                                 |
+| **dio**                            | Client HTTP pour l’API TMDB                                 |
 | **sqflite**                        | Base de données SQLite locale (watchlist, cache)            |
 | **shared_preferences**            | Stockage clé/valeur (thème, langue, préférences)            |
 | **cached_network_image**          | Chargement + cache des posters de films                     |
@@ -144,7 +144,7 @@ lib/
 
 - Presentation : widgets Flutter + BLoC/Cubit
 - Domain : entités, contrats de repository, cas d’usage (use cases)
-- Data : implémentations concrètes (TMDb, sqflite, shared_preferences)
+- Data : implémentations concrètes (TMDB, sqflite, shared_preferences)
 
 ---
 
@@ -152,11 +152,11 @@ lib/
 
 ### 1️⃣ Prérequis
 
-✅ Flutter SDK (canal stable) — Installation
-✅ Dart (installé avec Flutter)
-✅ Un IDE compatible (VS Code, Android Studio, IntelliJ…)
-✅ Compte TMDB pour générer une API key (gratuite)
-✅ Pour iOS : Xcode installé + compte Apple (gratuit)
+✅ Flutter SDK (canal stable) — Installation<br/>
+✅ Dart (installé avec Flutter)<br/>
+✅ Un IDE compatible (VS Code, Android Studio, IntelliJ…)<br/>
+✅ Compte TMDB pour générer une API key (gratuite)<br/>
+✅ Pour iOS : Xcode installé + compte Apple (gratuit)<br/>
 
 ### 2️⃣ Configuration de l’API TMDb
 
@@ -207,7 +207,7 @@ open ios/Runner.xcworkspace
 2. Dans Runner > Signing & Capabilities :
 
 - choisir votre Team (Apple ID),
-- définir un Bundle Identifier unique (ex. com.anas.cinescout),
+- définir un Bundle Identifier unique (ex. com.example.cinescout),
 - lancer sur votre iPhone.
 
 ⚠️ La première fois, vous devrez faire confiance au profil développeur sur l’iPhone (Réglages → Général → VPN et gestion de l’appareil).
