@@ -224,11 +224,11 @@ open ios/Runner.xcworkspace
 
 ## 🗺️ Roadmap & améliorations possibles
 
-🔁 Ajout de la gestion complète des séries TV
-⭐ Système de recommandations personnalisées (en fonction de la watchlist)
-🧮 Filtres avancés : genre, année, pays, langue originale, note minimale
-🧪 Plus de tests unitaires et widget tests
-📦 Intégration continue (CI/CD) & publication sur Google Play / App Store
+🔁 Ajout de la gestion complète des séries TV<br/>
+⭐ Système de recommandations personnalisées (en fonction de la watchlist)<br/
+🧮 Filtres avancés : genre, année, pays, langue originale, note minimale<br/
+🧪 Plus de tests unitaires et widget tests<br/
+📦 Intégration continue (CI/CD) & publication sur Google Play / App Store<br/
 
 ---
 
