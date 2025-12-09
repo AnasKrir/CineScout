@@ -25,7 +25,7 @@ Les données proviennent de l’API publique **TMDB** (The Movie Database) et so
 3. [Architecture & organisation du code](#-architecture--organisation-du-code)
 4. [Démarrage rapide](#-démarrage-rapide)
    - [Prérequis](#1️⃣-prérequis)
-   - [Configuration de lAPI TMDb](#2️⃣-configuration-de-lapi-tmdb)
+   - [Configuration de lAPI TMDB](#2️⃣-configuration-de-lapi-tmdb)
    - [Lancer lapp-en-local](#3️⃣-lancer-lapp-en-local)
 5. [Aperçu (screenshots)](#-aperçu-screenshots)
 6. [Roadmap & améliorations possibles](#-roadmap--améliorations-possibles)
