@@ -158,7 +158,7 @@ lib/
 ✅ Compte TMDB pour générer une API key (gratuite)<br/>
 ✅ Pour iOS : Xcode installé + compte Apple (gratuit)<br/>
 
-### 2️⃣ Configuration de l’API TMDb
+### 2️⃣ Configuration de l’API TMDB
 
 1. Créer un fichier .env à la racine du projet :
 
