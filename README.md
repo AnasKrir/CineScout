@@ -242,7 +242,7 @@ Adam EL YOURI — UI/UX, gestion de la watchlist, logique métier <br/>
 ## 📄 Licence
 
 Projet sous licence MIT.<br/>
-Vous êtes libre d’utiliser, modifier et distribuer ce code dans vos projets. <br/>
+✅ Vous êtes libre d’utiliser, modifier et distribuer ce code dans vos projets. <br/>
 
 © 2025 — KRIR Anas & EL YOURI Adam <br/>
 
