@@ -234,17 +234,17 @@ open ios/Runner.xcworkspace
 
 ## 👥 Auteurs
 
-Anas KRIR — Flutter dev, architecture & intégration TMDB
-Adam EL YOURI — UI/UX, gestion de la watchlist, logique métier
+Anas KRIR — Flutter dev, architecture & intégration TMDB <br/>
+Adam EL YOURI — UI/UX, gestion de la watchlist, logique métier <br/>
 
 ---
 
 ## 📄 Licence
 
 Projet sous licence MIT.<br/>
-Vous êtes libre d’utiliser, modifier et distribuer ce code dans vos projets.
+Vous êtes libre d’utiliser, modifier et distribuer ce code dans vos projets. <br/>
 
-© 2025 — KRIR Anas & EL YOURI Adam
+© 2025 — KRIR Anas & EL YOURI Adam <br/>
 
 ---
 
