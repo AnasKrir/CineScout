@@ -36,7 +36,7 @@ class _RegisterPageState extends State<RegisterPage> {
     if (email.isEmpty || password.isEmpty || confirm.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Veuillez remplir tous les champs.'),
+          content: Text('Please fill in all fields'),
         ),
       );
       return;
@@ -45,7 +45,7 @@ class _RegisterPageState extends State<RegisterPage> {
     if (password != confirm) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Les mots de passe ne correspondent pas.'),
+          content: Text('The passwords do not match'),
         ),
       );
       return;
@@ -85,7 +85,7 @@ class _RegisterPageState extends State<RegisterPage> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Créer un compte'),
+          title: const Text('Create an account'),
           centerTitle: true,
         ),
         body: Padding(
@@ -96,14 +96,14 @@ class _RegisterPageState extends State<RegisterPage> {
                 controller: _emailController,
                 keyboardType: TextInputType.emailAddress,
                 decoration: const InputDecoration(
-                  labelText: 'Email',
+                  labelText: 'E-mail',
                 ),
               ),
               const SizedBox(height: 12),
               TextField(
                 controller: _passwordController,
                 decoration: const InputDecoration(
-                  labelText: 'Mot de passe',
+                  labelText: 'Password',
                 ),
                 obscureText: true,
               ),
@@ -111,7 +111,7 @@ class _RegisterPageState extends State<RegisterPage> {
               TextField(
                 controller: _confirmController,
                 decoration: const InputDecoration(
-                  labelText: 'Confirmer le mot de passe',
+                  labelText: 'Confirm password',
                 ),
                 obscureText: true,
               ),
@@ -126,7 +126,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           width: 20,
                           child: CircularProgressIndicator(strokeWidth: 2),
                         )
-                      : const Text('Créer le compte'),
+                      : const Text('Create an account'),
                 ),
               ),
             ],

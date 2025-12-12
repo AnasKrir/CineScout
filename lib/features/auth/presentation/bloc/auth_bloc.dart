@@ -7,8 +7,8 @@ import 'auth_state.dart';
 
 class AuthBloc extends Bloc<AuthEvent, AuthState> {
   AuthBloc({required AuthRepository authRepository})
-      : _authRepository = authRepository,
-        super(const AuthInitial()) {
+    : _authRepository = authRepository,
+      super(const AuthInitial()) {
     on<AuthCheckRequested>(_onAuthCheckRequested);
     on<LoginRequested>(_onLoginRequested);
     on<RegisterRequested>(_onRegisterRequested);
@@ -39,25 +39,24 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     final email = event.email.trim();
     final password = event.password.trim();
 
-    final emailRegex =
-        RegExp(r'^[\w\.\-]+@([\w\-]+\.)+[a-zA-Z]{2,4}$');
+    final emailRegex = RegExp(r'^[\w\.\-]+@([\w\-]+\.)+[a-zA-Z]{2,4}$');
     if (!emailRegex.hasMatch(email)) {
-      emit(const Unauthenticated(message: 'Email invalide.'));
+      emit(const Unauthenticated(message: 'Invalid email address'));
       return;
     }
 
     if (password.length < 6) {
-      emit(const Unauthenticated(
-        message: 'Le mot de passe doit contenir au moins 6 caractères.',
-      ));
+      emit(
+        const Unauthenticated(
+          message: 'The password must contain at least 6 characters',
+        ),
+      );
       return;
     }
 
     final hasUser = await _authRepository.hasRegisteredUser();
     if (!hasUser) {
-      emit(const Unauthenticated(
-        message: 'Aucun compte trouvé. Veuillez vous inscrire.',
-      ));
+      emit(const Unauthenticated(message: 'No account found. Please register'));
       return;
     }
 
@@ -67,9 +66,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     );
 
     if (!isValid) {
-      emit(const Unauthenticated(
-        message: 'Email ou mot de passe incorrect.',
-      ));
+      emit(const Unauthenticated(message: 'Incorrect email or password'));
       return;
     }
 
@@ -87,17 +84,18 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     final email = event.email.trim();
     final password = event.password.trim();
 
-    final emailRegex =
-        RegExp(r'^[\w\.\-]+@([\w\-]+\.)+[a-zA-Z]{2,4}$');
+    final emailRegex = RegExp(r'^[\w\.\-]+@([\w\-]+\.)+[a-zA-Z]{2,4}$');
     if (!emailRegex.hasMatch(email)) {
-      emit(const Unauthenticated(message: 'Email invalide.'));
+      emit(const Unauthenticated(message: 'Invalid email address'));
       return;
     }
 
     if (password.length < 6) {
-      emit(const Unauthenticated(
-        message: 'Le mot de passe doit contenir au moins 6 caractères.',
-      ));
+      emit(
+        const Unauthenticated(
+          message: 'The password must contain at least 6 characters',
+        ),
+      );
       return;
     }
 

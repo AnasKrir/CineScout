@@ -33,7 +33,7 @@ class _LoginPageState extends State<LoginPage> {
     if (email.isEmpty || password.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Veuillez saisir un email et un mot de passe.'),
+          content: Text('Please enter an email address and password'),
         ),
       );
       return;
@@ -73,7 +73,7 @@ class _LoginPageState extends State<LoginPage> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Connexion'),
+          title: const Text('Login'),
           centerTitle: true,
         ),
         body: Padding(
@@ -84,14 +84,14 @@ class _LoginPageState extends State<LoginPage> {
                 controller: _emailController,
                 keyboardType: TextInputType.emailAddress,
                 decoration: const InputDecoration(
-                  labelText: 'Email',
+                  labelText: 'E-mail',
                 ),
               ),
               const SizedBox(height: 12),
               TextField(
                 controller: _passwordController,
                 decoration: const InputDecoration(
-                  labelText: 'Mot de passe',
+                  labelText: 'Password',
                 ),
                 obscureText: true,
               ),
@@ -106,13 +106,13 @@ class _LoginPageState extends State<LoginPage> {
                           width: 20,
                           child: CircularProgressIndicator(strokeWidth: 2),
                         )
-                      : const Text('Se connecter'),
+                      : const Text('Log in'),
                 ),
               ),
               const SizedBox(height: 12),
               TextButton(
                 onPressed: () => context.go('/register'),
-                child: const Text("Pas de compte ? Créer un compte"),
+                child: const Text("No account? Create an account"),
               ),
             ],
           ),

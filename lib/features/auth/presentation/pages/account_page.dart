@@ -224,7 +224,7 @@ class _AccountPageState extends State<AccountPage> {
                   ),
                   const SizedBox(height: 24),
                   Text(
-                    isFr ? 'Danger zone' : 'Danger zone',
+                    isFr ? 'Zone de Danger' : 'Danger zone',
                     style: Theme.of(context).textTheme.titleMedium,
                   ),
                   const SizedBox(height: 8),
